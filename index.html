@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mainContainer">
+        <canvas id="imageContainer">
+
+        </canvas>
+        <div id="filtersContainer">
+            <div class="filter">
+                <p class="filterName">Brightness</p>
+                <input id="brightnessFilter" class="filterValue" type="range" value="0" min="-255" max="255">
+            </div>
+            <div class="filter">
+                <p class="filterName">Rotation</p>
+                <input id="rotationFilter" class="filterValue" type="range" value="0" min="-180" max="180">
+            </div>
+            <div class="filter">
+                <p class="filterName">Contrast</p>
+                <input id="contrastFilter" class="filterValue" type="range" value="0" min="-255" max="255">
+            </div>
+        </div>
+    </div>
+    <input id="imageLoader" name="file" type="file">
+</body>
+
+<script type="application/javascript" src="script.js"></script>
+</html>
